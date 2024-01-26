@@ -8,12 +8,10 @@ import {store} from './src/services/Cart/implementations/redux/store';
 
 export function App(): JSX.Element {
   return (
-    // <CartProvider>
     <ReduxProvider store={store}>
       <SafeAreaProvider>
         <HomeScreen />
       </SafeAreaProvider>
     </ReduxProvider>
-    // {/* </CartProvider> */}
   );
 }

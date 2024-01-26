@@ -23,7 +23,9 @@ export function useCartRedux(): Cart {
   }
 
   function removeFromCart() {
-    dispatch(decrement());
+    if (cartRedux !== 0) {
+      dispatch(decrement());
+    }
   }
 
   function cleanCart() {
