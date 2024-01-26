@@ -1,6 +1,6 @@
 import {Pressable, PressableProps as RNPressableProps} from 'react-native';
 import React from 'react';
-import {ShopIcon} from './ShopIcon';
+import {ShopIcon} from '../../assets/icons/ShopIcon';
 
 export interface IconBase {
   size?: number;
@@ -9,7 +9,7 @@ export interface IconBase {
 
 export interface IconProps extends RNPressableProps {
   name: IconName;
-  color: string;
+  color?: string;
   size?: number;
   onPress?: () => void;
 }

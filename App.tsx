@@ -1,6 +1,12 @@
 import React from 'react';
-import {View} from 'react-native';
+
+import {HomeScreen} from './src/screens/HomeScreen/HomeScreen';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 export function App(): JSX.Element {
-  return <View />;
+  return (
+    <SafeAreaProvider>
+      <HomeScreen />
+    </SafeAreaProvider>
+  );
 }
