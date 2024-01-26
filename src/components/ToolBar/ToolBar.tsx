@@ -22,7 +22,8 @@ export function ToolBar({value}: ToolBarProps) {
 const $wrapper: ViewStyle = {
   flexDirection: 'row',
   alignItems: 'center',
-
+  marginBottom: 48,
+  marginHorizontal: -16,
   backgroundColor: 'white',
 };
 
